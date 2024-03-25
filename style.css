@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #CC5CC8;
+}
+
+.header-main {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-main h1 {
+    color: white;
+    margin: 0;
+}
+
+nav {
+    background-color: #CC5CC8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 8rem;
+    font-size: 1.3rem;
+
+}
+
+nav a:hover {
+    color: #F1B7E0;
+}
+
+.section-home {
+    background-color: #F1B7E0 ;
+    padding: 20px; /* Add padding for margin */
+    border-radius: 10px; /* Round the corners */
+    margin: 20px; /* Add margin around the section */
+}
+
+.section-home p{
+        margin-top: 3rem;
+}
+
+.resized-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    text-align: center; 
+    padding: 20px;
+    width: 200px; 
+    margin: 0 auto;
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+/* Styling for the second tooltip */
+#tooltip2 {
+    background-color: #333; /* Blue background color */
+    color: white; /* White text color */
+    padding: 8px 12px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+    position: absolute; /* Positioning */
+    top: 50%; /* Position from the top */
+    left: 55%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the tooltip */
+    display: none; /* Initially hidden */
+}
+
+#tooltip2.show {
+    display: block; /* Show when active */
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-column-gap: 20px; /* Gap between columns */
+    background-color: #F1B7E0;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    margin: 20px; /* Add margin around the section */
+}
+
+.column {
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    background-color: white; /* Set background color */
+    padding: 20px; /* Add padding */
+}
+
+.column h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the list items */
+}
+
+.column ul li {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.footer-main {
+    background-color: #F1B7E0;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px; /* Add margin around the footer */
+    text-align: center; /* Center align text */
+    cursor: pointer;
+}
+
+.footer-main h3 {
+    cursor: pointer;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dialog.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        grid-template-columns: 1fr; /* Change to one column */
+    }
+}
