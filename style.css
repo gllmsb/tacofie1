@@ -161,4 +161,13 @@ nav a:hover {
     .about-me {
         grid-template-columns: 1fr; /* Change to one column */
     }
+    
+    nav {
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    nav a {
+        margin: 0 1rem; /* Reduce margin */
+        font-size: 1rem; /* Adjust font size */
+    }
 }
